@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#00b359"
+    android:gravity="center"
+    tools:context="com.example.uts_aplikasi.Komponen1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#00b359"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="              Intent adalah sebuah kelas dalam programming Android yang berfungsi untuk perpindahan halaman.
+Intent juga merupakan suatu objek yang terdapat dalam suatu activity dimana objek tersebut
+dapat komunikasi dengan activity yang lain, baik activity pada fungsi internal android
+seperti memanggil activity dalam satu package atau beda package yang masih berada dalam satu project.
+Intent merupakan objek tipe android.content.Intent. \n
+Intent dibagi menjadi 2, yaitu :\n
+1.Explicit Intent \n
+                menentukan aplikasi mana yang akan memenuhi persyaratan intent, dengan menyediakan
+nama paket aplikasi target maupun nama class komponen yang sepenuhnya memenuhi syarat.
+Biasanya digunakan untuk memulai sebuah komponen pada
+aplikasi Anda sendiri, karena Anda mengetahui nama class dari aktivitas atau layanan
+yang ingin dimulai.\n
+2.Implicit Intent \n
+                tidak menetapkan komponen tertentu, melainkan mendeklarasikan tindakan umum yang akan dilakukan,
+yang memungkinkan komponen aplikasi lain untuk menanganinya.\n "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/activity_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00b359"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKom11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/link_materi"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00b359"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKom12"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/contoh_syntax"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

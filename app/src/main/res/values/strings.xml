@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UTS_Aplikasi</string>
+    <string name="teknologi_bergerak">Teknologi Bergerak</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="service">Service</string>
+    <string name="activity">Activity</string>
+    <string name="intent">Intent</string>
+    <string name="link_materi">Link Materi</string>
+    <string name="contoh_syntax">Contoh Syntax</string>
+
+
+</resources>

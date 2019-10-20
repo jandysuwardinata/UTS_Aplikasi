@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#00b359"
+    android:gravity="center"
+    tools:context="com.example.uts_aplikasi.Komponen3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/broadcast_receiver"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#00b359"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="              Penerima siaran adalah komponen yang memungkinkan sistem menyampaikan kejadian
+di luar alur pengguna regular, menjadikan aplikasi tersebut dapat merespons
+pengumuman siaran seluruh sistem. Oleh karena penerima siaran adalah entri
+yang didefinisikan dengan baik ke dalam aplikasi, sistem dapat mengirimkan
+siaran meskipun ke aplikasi yang saat ini tidak berjalan. Jadi, misalnya,
+suatu aplikasi dapat menjadwalkan alarm untuk mengirimkan notifikasi agar
+pengguna tahu tentang acara yang akan datang... dan dengan mengirimkan alarm
+tersebut ke Penerima Siaran aplikasi, aplikasi tersebut tidak perlu untuk tetap
+berjalan hingga alarm mati. Banyak siaran berasal dari sistem—misalnya, siaran
+yang mengumumkan bahwa layar sudah dimatikan, baterai lemah, atau gambar sudah
+diambil. Aplikasi juga dapat mengawali siaran—misalnya, untuk memberi tahu
+aplikasi lain bahwa beberapa data sudah didownload ke perangkat dan tersedia
+untuk digunakan. Walaupun penerima siaran tidak menampilkan antarmuka pengguna,
+penerima bisa membuat notifikasi bilah status untuk memberi tahu pengguna kapan kejadian siaran dilakukan.\n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/activity_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00b359"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKom31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/link_materi"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00b359"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKom32"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/contoh_syntax"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

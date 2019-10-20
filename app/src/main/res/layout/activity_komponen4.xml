@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#00b359"
+    android:gravity="center"
+    tools:context="com.example.uts_aplikasi.Komponen4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/service"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#00b359"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="              Layanan adalah titik masuk serbaguna untuk menjaga aplikasi tetap berjalan
+di latar belakang bagi semua jenis alasan. Ini adalah komponen yang berjalan
+di latar belakang untuk melakukan operasi yang berjalan lama atau untuk melakukan
+pekerjaan bagi proses jarak jauh. Layanan tidak menyediakan antarmuka pengguna.
+Misalnya, sebuah layanan bisa memutar musik di latar belakang sementara pengguna
+berada dalam aplikasi lain, atau layanan bisa menarik data lewat jaringan tanpa
+memblokir interaksi pengguna dengan aktivitas. Komponen lain, seperti aktivitas,
+bisa memulai layanan dan membiarkannya berjalan atau mengikat layanan untuk berinteraksi
+dengannya. Sebenarnya ada dua layanan semantik berbeda yang memberi tahu sistem tentang
+cara mengelola aplikasi: Layanan yang dimulai memberi tahu sistem agar tetap berjalan
+hingga pekerjaannya selesai. Hal ini bisa jadi untuk menyinkronkan beberapa data di
+latar belakang atau memutar musik meskipun setelah pengguna meninggalkan aplikasi
+tersebut. Menyinkronkan data di latar belakang atau memutar musik juga mewakili
+dua jenis layanan dimulai yang berbeda, yang memodifikasi bagaimana sistem menanganinya.\n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/activity_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00b359"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKom41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/link_materi"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#00b359"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKom42"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/contoh_syntax"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#00b359"
+    android:gravity="center"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teknologi_bergerak"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/intent_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnKom1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/intent"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <GridLayout
+            android:id="@+id/broadcastreceiver_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnKom3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/broadcast_receiver"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:id="@+id/contentprovider_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnKom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/content_provider"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/service_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnKom4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/service"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:id="@+id/activity_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnKom5"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="@string/activity"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>
